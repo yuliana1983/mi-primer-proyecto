@@ -1,0 +1,160 @@
+:root{
+    --titulos:'Lato', sans-serif;
+    --parrafos:'Roboto', sans-serif;
+    /* colores */
+    --encabezado:rgba(255, 255, 255, 0.979);
+    --piepagina:#000;
+    --enlace:rgb(8, 8, 8); 
+    --enlacesobre:#f80b0b;
+    
+    }
+    
+    /* selector universal (*)*/
+    *¨{
+        box-sizing: border-box;
+    }
+    
+    /* notacion de una clase en css es (.) y en html es class*/
+    .home-wrapper{
+        background-image: url("/images/portada principal 1.jpg");
+        background-size: cover; 
+        margin-bottom: 10px;
+    
+    }
+    
+    /* header es un selector de etiqueta en el ccs */
+    header{
+        width: 100%;
+        background-color:var(--encabezado);
+        position: fixed;
+        padding: 10px 0;
+    }
+    
+    /* conbinacion de selectores de etiqueta en css */
+    header nav{
+    float: right;
+    margin-top: 8px;
+    
+    }
+    
+    header img{
+        width: 100px;
+    }
+    
+    header nav a{
+        text-decoration: none;
+        color: var(--enlace);
+        margin-left: 8px;
+    }
+        
+    header nav a:hover{
+        color: var(--enlacesobre);
+    
+    }
+    
+    /* seccion home con un identificador en css */
+    #home{
+        text-align: center;
+        padding: 250px 0 250px;
+    }
+    
+    #home p{
+        margin-top: 50px;
+        color: rgb(12, 12, 12);
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    #home h1{
+        margin-bottom: 45px;
+        font-weight: 700;
+        font-size: 3.5rem;
+        color: #000;
+    }
+    
+    .container{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    section{
+    padding: 80px 0;
+    }
+    section h2{
+        text-align: center;
+        margin-bottom: 50px;
+        font-size: 2.5rem;
+    }
+    
+    /* seccion novedades */
+    #novedades .box{
+        display: inline-block;
+        width: 33%;
+        padding: 8px;
+    
+    }
+    
+    #novedades .box p{
+        text-align: justify;
+    
+    }
+    
+    #novedades .box img{
+       padding-left: 30%;
+       padding-bottom: 10px;
+    
+    }
+    
+    #novedades .box h3{
+        text-align: center;
+    
+    }
+    /* seccion categoria */
+    #categoria .box{
+        width: 33%;
+        display: inline-block;
+        padding: 8px;
+    }
+    #categoria .box img{
+       width: 100%;
+    }    
+    #categoria .box p{
+        text-align: justify;
+    }
+    #categoria .box h3{
+        text-align: center;
+    }
+    /* contacto */
+    #contacto{
+        background-image: url(../images/contacto\ 1.jpg);
+        background-color: rgba(0, 0, 0, 0.712);
+        background-size: cover;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    #contacto h2{
+        color: #fff;
+    }
+    #contacto input, select, textarea{
+    width: 600px;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-size: 18px;
+    }
+    
+    iframe{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+    
+    /* footer o pie de pag */
+    footer{
+        width: 100%;
+        text-align: center;
+        color: #fff;
+        padding: 20px 0;
+        background-color: var(--piepagina);
+    
+    }
